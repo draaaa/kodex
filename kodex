@@ -4,7 +4,7 @@
 game.StarterGui:SetCore("SendNotification", 
 {
     Title = "Kodex Loaded";
-    Text = "Current Version: 0.2a";
+    Text = "Current Version: 0.2";
     Duration = 7
 }
 )
