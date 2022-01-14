@@ -247,7 +247,7 @@ end)
 
 --Anti AFK--
 
-b:Button("Load",function()
+b:Button("Anti AFK",function()
     
 if game:IsLoaded() == true then
     local vu = game:service'VirtualUser'
