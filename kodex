@@ -245,6 +245,45 @@ b:Button("Anti-FE",function()
     game:GetService'Players'.LocalPlayer.Character['Right Arm']:Destroy()
 end)
 
+--Anti AFK--
+
+b:Button("Load",function()
+    
+if game:IsLoaded() == true then
+    local vu = game:service'VirtualUser'
+
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+        vu:CaptureController()
+        vu:ClickButton2(Vector2.new())
+        print("{ANTI-AFK} Anti-AFK Loaded")
+    end)
+
+    pcall(function() 
+        game.StarterGui:SetCore("ChatMakeSystemMessage", {
+            Text = "{ANTI-AFK} Anti-AFK Loaded";
+            Color = Color3.new(255,255,255);
+        }) 
+    end)
+end
+
+game.Loaded:Connect(function()
+    local vu = game:service'VirtualUser'
+
+    game:service'Players'.LocalPlayer.Idled:connect(function()
+        vu:CaptureController()
+        vu:ClickButton2(Vector2.new())
+        print("{ANTI-AFK} Anti-AFK Loaded")
+    end)
+
+    pcall(function() 
+        game.StarterGui:SetCore("ChatMakeSystemMessage", {
+            Text = "{ANTI-AFK} Anti-AFK Loaded";
+            Color = Color3.new(255,255,255);
+        }) 
+    end)
+end)
+end)
+
 --FOV--
 
 b:Slider("FOV",{
