@@ -4,7 +4,7 @@
 game.StarterGui:SetCore("SendNotification", 
 {
     Title = "Kodex Loaded";
-    Text = "Current Version: 1.0";
+    Text = "Current Version: 1.0b";
     Duration = 7
 }
 )
@@ -61,11 +61,7 @@ end)
 
 --//////////////////////////////////////////////////////////////////////////////////////////--
 
-local b = w:CreateFolder("Other") -- Creates the folder(U will put here your buttons,etc)
-
-b:Bind("Killbind",Enum.KeyCode.R,function() --Default bind
-    game.Players.LocalPlayer.Character.Humanoid.Health = 0
-end)
+--kodex killbind shit broke ill put something else here later--
 
 --//////////////////////////////////////////////////////////////////////////////////////////--
 
