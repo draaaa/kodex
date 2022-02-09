@@ -78,7 +78,7 @@ b:Label("not recommended for the streets",{
 	
 })
 
-b:Button("Cyrus",function()
+b:Button("fatesc",function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
 end)
 
