@@ -4,7 +4,7 @@
 game.StarterGui:SetCore("SendNotification", 
 {
     Title = "Kodex Loaded";
-    Text = "Current Version: 1.0b";
+    Text = "Current Version: 1.1";
     Duration = 7
 }
 )
@@ -65,11 +65,26 @@ end)
 
 --//////////////////////////////////////////////////////////////////////////////////////////--
 
-local w = library:CreateWindow("Cheats") -- Creates the window
+local w = library:CreateWindow("Cheats/Admins") -- Creates the window
+
+--Admin Scripts--
+
+local b = w:CreateFolder("Admin Scripts") -- Creates the folder(U will put here your buttons,etc)
+
+b:Label("not recommended for the streets",{
+    TextSize = 25; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+	
+})
+
+b:Button("Cyrus",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+end)
 
 --Non Blatant--
 
-local b = w:CreateFolder("Non-Blatant") -- Creates the folder(U will put here your buttons,etc)
+local b = w:CreateFolder("Streets Non-Blatant") -- Creates the folder(U will put here your buttons,etc)
 
 b:Label("get they ass!!!",{
     TextSize = 25; -- Self Explaining
@@ -145,7 +160,7 @@ end)
 
 --Blatant--
 
-local b = w:CreateFolder("Blatant") -- Creates the folder(U will put here your buttons,etc)
+local b = w:CreateFolder("Streets Blatant") -- Creates the folder(U will put here your buttons,etc)
 
 b:Label("run your hours son",{
     TextSize = 25; -- Self Explaining
