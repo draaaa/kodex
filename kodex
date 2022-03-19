@@ -1,5 +1,5 @@
 local Config = {
-    WindowName = "kdx v2.0.2b",
+    WindowName = "kdx v2.0.2c",
 	Color = Color3.fromRGB(171,54,255),
 	Keybind = Enum.KeyCode.RightBracket
 }
@@ -101,7 +101,7 @@ ts:Teleport(game.PlaceId, p)
 end)
 Button9:AddToolTip("rejoins server")
 -------------
-Section2:CreateLabel("full cheats\nim not responsible for bans")
+Section2:CreateLabel("full cheats\nIM NOT RESPONSIBLE FOR BANS FROM REG TS")
 -------------
 local Button10 = Section2:CreateButton("cyrus", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/draaaa/cyrusloadstring/main/cyrus", true))()
