@@ -1,5 +1,11 @@
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Kodex v2.0.3b";
+    Text = "Final update for kodex v2 beta, full release coming soon :3";
+    Icon = "";
+})
+
 local Config = {
-    WindowName = "kdx v2.0.2c",
+    WindowName = "kdx v2.0.3b",
 	Color = Color3.fromRGB(171,54,255),
 	Keybind = Enum.KeyCode.RightBracket
 }
